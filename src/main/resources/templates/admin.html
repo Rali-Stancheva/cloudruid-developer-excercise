@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>All Products</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Offer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Извеждане на продуктите -->
+    <tr th:each="entry : ${allProducts}">
+        <td th:text="${entry.key}">Product Name</td>
+        <td th:text="${entry.value}">Product Price</td>
+        <td><!-- Добавете тук логика за офертата, ако има такава --></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.cloudruid"},{"l":"com.example.cloudruid.controllers"},{"l":"com.example.cloudruid.models"},{"l":"com.example.cloudruid.services"},{"l":"com.example.cloudruid.services.impl"}];updateSearchResults();
